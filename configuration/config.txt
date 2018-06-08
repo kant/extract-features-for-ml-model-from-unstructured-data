@@ -1,1 +1,41 @@
-hi
+{
+	"configuration":{
+		"class":{
+			"stages" : [
+			{
+				"name":"System",
+				"System" : [
+					
+					{
+						"name":"purpose",
+						"purpose":[
+							{
+								"type":"Chunk",
+								"tag":"purpose",
+								"regex": "Chunk: {<NN> <NN>}"
+							}
+						]
+					},
+					
+					{
+						"name":"policy",
+						"policy":[
+						{
+							"type":"split",
+							"tag":"policy",
+							"split":","
+						}
+						]
+					}
+				
+				
+				]
+			
+			
+			
+			}
+			]
+		
+		}		
+	}				
+}
