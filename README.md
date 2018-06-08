@@ -221,4 +221,4 @@ Further, the created dataframe can be downloaded as a csv file. By running the c
 
 Next, go to your Cloud Object Storage in your IBM Cloud Dashboard, move to the appropriate bucket as listed in the credentials above, and click on download by selecting `train.csv`
 
-![](doc/source/images/save_as_csv.png)
+![](doc/source/images/save_to_csv.png)
