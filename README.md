@@ -1,7 +1,5 @@
 # extract-features-for-ml-model-from-unstructured-data
 
-# Chat-Transcripts
-
 With the advert increase in cognitive technology, chatbots have gained popularity to interact with a user to perform any domain specific task. The information obtained as a result of these chats contain policies, important feature-value pairs and other important features affecting the process of making a business decision. Thus, if this information is converted to a structured format, such as a dataframe, it can be used as training data for improving the decision making process of the chatbot.
 
 This pattern aims to convert the unstructured chat transcripts to a structured dataframe, by extracting the most important feature-value pairs that may affect a final decision.
