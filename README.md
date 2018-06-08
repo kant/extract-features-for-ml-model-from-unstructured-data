@@ -215,3 +215,10 @@ Each case will go through two strategies to extract the important feature-value 
 
 ![](doc/source/images/analyze_results.jpg)
 
+Further, the created dataframe can be downloaded as a csv file. By running the cell ``
+
+![](doc/source/images/analyze_results.jpg)
+
+Next, go to your Cloud Object Storage in your IBM Cloud Dashboard, move to the appropriate bucket as listed in the credentials above, and click on download by selecting `train.csv`
+
+![](doc/source/images/analyze_results.jpg)
