@@ -12,6 +12,8 @@ This pattern solves the problem using the following strategy:
 * The most important feature-value pairs extracted are further mapped with the other cases to obtain a uniform structure
 * Finally, a dataframe containing the value of each feature and the recommendation for each case is obtained
 
+![](doc/source/images/architecture_ChatTranscript.png)
+
 
 ## Included components
 
