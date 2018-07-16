@@ -1,4 +1,4 @@
-# extract-features-for-ml-model-from-unstructured-data
+# Automating-the-process-of-extracting-features-for-ml-model-from-unstructured-data
 
 The current systems involves a lot of manual Intervention right from the Data Preparation stage to make use of the information analysed by the machine learning algorithms. The Domain specific Documents are read by a Subject matter expert and excel sheets are prepared manually. In the proposed strategy, Data(excel sheets) are prepared automatically ready to be fed in the ML Model.
 
