@@ -189,3 +189,31 @@ options to specify exactly what you want shared from your notebook:
 
 ## 3. Analyze the Results
 
+There are 3 main modules in the notebook:
+Module 1----Factfile: Extract all possible symptoms from the Factfile, which in turn will the used as features(column name).
+
+Module 2----Doctor Transcript: Extract the following features-
+1.	Symptoms
+2.	Lab test- yes or no (indicates if the doctor has given any lab tests) 
+3.	Lab test names (only if lab test feature is yes)
+4.	Recommendation
+
+Module 3----Lab Report: This module is called only if the doctor mentions lab tests (i.e., if Lab Test from doctor transcript is yes).
+In this module, we extract required test names and its corresponding result. 
+Data Frame: We initially represent all the features and its values as ordered dictionary and then feed it to the dataframe. 
+
+-	Take features(symptoms) as key from FactFile module and compare them with the symptoms in Doctor Transcript module. If we find the symptom in the Doctor Transcript module then the corresponding value of the feature would be YES else it would be NO.
+
+-	Check if the Lab Test is YES or NO from the Doctor Transcript module. 
+If YES then we extract the test names and final recommendation,
+If NO then we extract only the recommendation.
+
+-	Check if the Lab Test is YES or NO from the Doctor Transcript module. 
+If YES then we extract the test names and corresponding result. Now all these key value pairs will fed to the pandas dataframe function. Finally a dataframe is formed where each row is one patient’s case. The formed dataframe is then converted to a csv file, to feed into the ML model.
+
+
+
+![](doc/source/images/analyse-results.png)
+
+
+
