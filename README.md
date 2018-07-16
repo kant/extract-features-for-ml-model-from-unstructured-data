@@ -1,14 +1,11 @@
 # extract-features-for-ml-model-from-unstructured-data
 
-With the advert increase in cognitive technology, chatbots have gained popularity to interact with a user to perform any domain specific task. The information obtained as a result of these chats contain policies, important feature-value pairs and other important features affecting the process of making a business decision. Thus, if this information is converted to a structured format, such as a dataframe, it can be used as training data for improving the decision making process of the chatbot.
+The current systems involves a lot of manual Intervention right from the Data Preparation stage to make use of the information analysed by the machine learning algorithms. The Domain specific Documents are read by a Subject matter expert and excel sheets are prepared manually. In the proposed strategy, Data(excel sheets) are prepared automatically ready to be fed in the ML Model.
 
-This pattern aims to convert the unstructured chat transcripts to a structured dataframe, by extracting the most important feature-value pairs that may affect a final decision.
+This pattern aims to convert the unstructured Information to a structured dataframe, by extracting the most important feature-value pairs that may affect a final decision. 
 
-This pattern solves the problem using the following strategy:
-* Extract chat transcripts and split by the number of use cases, so that each case forms one row of the dataframe along with the required recommendation
-* Each case will go through two strategies to extract the important feature-value pairs
-* The most important feature-value pairs extracted are further mapped with the other cases to obtain a uniform structure
-* Finally, a dataframe containing the value of each feature and the recommendation for each case is obtained
+We have taken Tuberculosis Data to showcase the strategy. The features and their values extracted from the files like `facts about Tuberculosis`, `Pulmonologist's Reports` and `Lab-reports` of the patient, can be used to build a model and then an interactive system on top of that model to aid Pulmonologist in taking treatment decision . This will enable Pulmonologist to give personalised care to the patient.
+
 
 ![](doc/source/images/architecture.png)
 
@@ -192,31 +189,3 @@ options to specify exactly what you want shared from your notebook:
 
 ## 3. Analyze the Results
 
-The chat transcripts given as input is split by the number of use cases, so that each case forms one row of the dataframe along with the required recommendation. Each of these case extract the important feature-value pairs by the following techniques-
-
-### First Strategy
-Suppose we have a chat conversation such as,
-
-![](doc/source/images/First_Strategy.jpg)
-
-The algorithm will take the results of Watson NLU and use NLP Chunking techniques to extract the required feature-value pairs.
-
-### Second Strategy
-For a chat conversation such as,
-
-![](doc/source/images/Second_Strategy.jpg)
-
-* The algorithm will pass the first line to NLU and extract the important feature by taking into consideration Keywords, Entities and Semantic Roles.
-* The second line is treated as the value for the feature extracted through the above technique.
-
-Each case will go through two strategies to extract the important feature-value pairs.  After running the notebook, we receive a dataframe as an output with the final column being the recommendation. In section `5.4 Collect Obtained Features and Form a Dataframe` 
-
-![](doc/source/images/analyze_results.jpg)
-
-Further, the created dataframe can be downloaded as a csv file. By running the cell `5.5 Save results as csv`
-
-![](doc/source/images/run_csv_notebook.png)
-
-Next, go to your Cloud Object Storage in your IBM Cloud Dashboard, move to the appropriate bucket as listed in the credentials above, and click on download by selecting `train.csv`
-
-![](doc/source/images/save_to_csv.png)
