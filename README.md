@@ -1,11 +1,11 @@
 # Automating-the-process-of-extracting-features-for-ml-model-from-unstructured-data
-`Disclaimer : The data(facts about Tuberculosis, Pulmonologist's Reports and Lab-reports of the patient) used in this Code Pattern is just a dummy data for showcasing the strategy and not to be put to actual use.`
+`Disclaimer : The data (facts about Tuberculosis, Pulmonologist's Reports and Lab-reports of the patient) used in this Code Pattern is just a dummy data for showcasing the strategy and not to be put to actual use.`
 
 The current systems involves a lot of manual Intervention right from the Data Preparation stage to make use of the information analysed by the machine learning algorithms. The Domain specific Documents are read by a Subject matter expert and excel sheets are prepared manually. In the proposed strategy, Data(excel sheets) are prepared automatically ready to be fed in the ML Model.
 
 This pattern aims to convert the unstructured Information to a structured dataframe, by extracting the most important feature-value pairs that may affect a final decision. 
 
-In the Healthcare domain as well, the specialist of various diseases deals with different cases every single day. It's really hard for the doctors to remember the record of every patient and every case they come across on daily basis. So it becomes extremely difficult for them to give their a personalised consultation. In this Code pattern, We have taken Tuberculosis Data to showcase the strategy on how to build a recommendation table to aid doctors in giving their patient's a personalised consultation by weighing many factors. The features and their values are extracted from the files like `facts about Tuberculosis`, `Pulmonologist's Reports` and `Lab-reports` of the patient by analysing and integerating the facts mined from these files and are then put in the `recommendation table`. Further, this recommendation table can be used to build a model and then an interactive system on top of that model to aid Pulmonologist in taking treatment decision. This will enable Pulmonologist to give personalised care to the patient.
+In the Healthcare domain as well, the specialist of various diseases deals with different cases every single day. It's really hard for the doctors to remember the record of every patient and every case they come across on daily basis. So it becomes extremely difficult for them to give their a personalised consultation. In this Code pattern, we have taken Tuberculosis Data to showcase the strategy on how to build a recommendation table to aid doctors in giving their patient's a personalised consultation by weighing many factors. The features and their values are extracted from the files like `facts about Tuberculosis`, `Pulmonologist's Reports` and `Lab-reports` of the patient by analysing and integrating the facts mined from these files and are then put in the `recommendation table`. Further, this recommendation table can be used to build a model and then an interactive system on top of that model to aid Pulmonologist in taking treatment decision. This will enable Pulmonologist to give personalised care to the patient.
 
 
 ![](doc/source/images/architecture.png)
@@ -94,7 +94,7 @@ Create the following IBM Cloud service:
 
 #### Upload the data and configuration to the notebook
 
-* From the `My Projects > Default` page, Use `Find and Add Data` (look for the `10/01` icon)
+* From the `My Projects` > `Default` page, Use `Find and Add Data` (look for the `10/01` icon)
 and its `Files` tab.
 * Click `browse` and navigate to [data_doctor.zip]()
 * Click `browse` and navigate to [config.txt]()
@@ -107,9 +107,9 @@ and its `Files` tab.
 
 Get Watson NLU service credentials:
 
-* On your IBM Cloud Dashboard, click on Watson NLU service instance. On the left hand navigation bar click Service Credentials
+* On your IBM Cloud Dashboard, click on Watson NLU service instance. On the left hand navigation bar click `Service Credentials`
 * If you see View Credentials under Service Credentials then click on the down arrow mark beside View Credentials. Make of note of the credentials.
-* If you do not see View Credentials, then click New Credential to create new credentials and make a note of new credentials.
+* If you do not see View Credentials, then click `New Credential` to create new credentials and make a note of new credentials.
 
 Select the cell below `2.1 Add your service credentials from IBM Cloud` for the Watson services section in the notebook to update username and password for Watson NLU.
 
@@ -120,7 +120,7 @@ Select the cell below `2.1 Add your service credentials from IBM Cloud` for the 
 Select the cell below `2.2 Add your service credentials for Object Storage` section in the notebook to update the credentials for Object Store.
 
 * Delete the contents of the cell
-* Use Find and Add Data (look for the 10/01 icon) and its Files tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below 2.2 Add...
+* Use `Find and Add Data` (look for the `10/01` icon) and its `Files` tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below 2.2 Add...
 * Under Files, click the dropdown for Insert to code for `data_doctor.zip`
 * Click Insert StreamingBody object.
 * Make sure the credentials are saved as streaming_body_1. If not edit and replace the numbers to 1. There should be four such occurrences in the cell.
@@ -128,7 +128,7 @@ Select the cell below `2.2 Add your service credentials for Object Storage` sect
 ![](doc/source/images/service_credentials_chat.png)
 
 * In the next cell, Delete the contents of the cell
-* Use Find and Add Data (look for the 10/01 icon) and its Files tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below 2.2 Add...
+* Use `Find and Add Data` (look for the `10/01` icon) and its Files tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below 2.2 Add...
 * Under Files, click the dropdown for Insert to code for `config.txt`
 * Click Insert Service Credentials.
 * Make sure the credentials are saved as credentials_1. If not edit and replace the numbers to 1. There should be four such occurrences in the cell.
@@ -176,7 +176,7 @@ Under the `File` menu, there are several ways to save your notebook:
 
 #### How to share your work:
 
-You can share your notebook by selecting the “Share” button located in the top
+You can share your notebook by selecting the `Share` button located in the top
 right section of your notebook panel. The end result of this action will be a URL
 link that will display a “read-only” version of your notebook. You have several
 options to specify exactly what you want shared from your notebook:
