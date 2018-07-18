@@ -96,7 +96,7 @@ Create the following IBM Cloud service:
 
 * From the `My Projects > Default` page, Use `Find and Add Data` (look for the `10/01` icon)
 and its `Files` tab.
-* Click `browse` and navigate to [Archive.zip]()
+* Click `browse` and navigate to [data_doctor.zip]()
 * Click `browse` and navigate to [config.txt]()
 
 ![](doc/source/images/add_file.png)
@@ -121,7 +121,7 @@ Select the cell below `2.2 Add your service credentials for Object Storage` sect
 
 * Delete the contents of the cell
 * Use Find and Add Data (look for the 10/01 icon) and its Files tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below 2.2 Add...
-* Under Files, click the dropdown for Insert to code for `Archive.zip`
+* Under Files, click the dropdown for Insert to code for `data_doctor.zip`
 * Click Insert StreamingBody object.
 * Make sure the credentials are saved as streaming_body_1. If not edit and replace the numbers to 1. There should be four such occurrences in the cell.
 
