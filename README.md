@@ -1,10 +1,11 @@
 # Automating-the-process-of-extracting-features-for-ml-model-from-unstructured-data
+`Disclaimer : The data(facts about Tuberculosis, Pulmonologist's Reports and Lab-reports of the patient) used in this Code Pattern is just a dummy data for showcasing the strategy and not to be put to actual use.`
 
 The current systems involves a lot of manual Intervention right from the Data Preparation stage to make use of the information analysed by the machine learning algorithms. The Domain specific Documents are read by a Subject matter expert and excel sheets are prepared manually. In the proposed strategy, Data(excel sheets) are prepared automatically ready to be fed in the ML Model.
 
 This pattern aims to convert the unstructured Information to a structured dataframe, by extracting the most important feature-value pairs that may affect a final decision. 
 
-We have taken Tuberculosis Data to showcase the strategy. The features and their values extracted from the files like `facts about Tuberculosis`, `Pulmonologist's Reports` and `Lab-reports` of the patient, can be used to build a model and then an interactive system on top of that model to aid Pulmonologist in taking treatment decision . This will enable Pulmonologist to give personalised care to the patient.
+In the Healthcare domain as well, the specialist of various diseases deals with different cases every single day. It's really hard for the doctors to remember the record of every patient and every case they come across on daily basis. So it becomes extremely difficult for them to give their a personalised consultation. In this Code pattern, We have taken Tuberculosis Data to showcase the strategy on how to build a recommendation table to aid doctors in giving their patient's a personalised consultation by weighing many factors. The features and their values are extracted from the files like `facts about Tuberculosis`, `Pulmonologist's Reports` and `Lab-reports` of the patient by analysing and integerating the facts mined from these files and are then put in the `recommendation table`. Further, this recommendation table can be used to build a model and then an interactive system on top of that model to aid Pulmonologist in taking treatment decision. This will enable Pulmonologist to give personalised care to the patient.
 
 
 ![](doc/source/images/architecture.png)
