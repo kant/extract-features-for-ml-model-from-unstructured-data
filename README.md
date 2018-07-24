@@ -1,11 +1,27 @@
 # Automating-the-process-of-extracting-features-for-ml-model-from-unstructured-data
 `Disclaimer : The data(facts about Tuberculosis, Pulmonologist's Reports and Lab-reports of the patient) used in this Code Pattern is just a dummy data for showcasing the strategy and not to be put to actual use.`
 
-Currently in the Healthcare domain, to determine an individual's risk of any disease, doctors take a look at a list of factors such as age, weight, blood pressure, family medical history and more, but this approach is falling short in several areas, for example it doesn’t take into consideration any medication a patient might be on, any other illnesses or conditions they may have. The specialist of various diseases deals with different cases every single day. It's really hard for the doctors to remember the record of every patient and every case they come across on daily basis. Hence it becomes extremely difficult for them to give their a personalised consultation. 
+A recommendation or decision in a business is based on information from multiple sources. The sources can contain data in structured and unstructured format. Whenever we need to analyse a recommendation or a decision, we need all the information that went into making the decision. This code pattern aims to build a recommendation table that can be used to analyse or audit a recommendation or decision.
 
- AI and Machine Learning are spreading their wings to Healthcare and to do the right analysis require huge amount right and good quality Data. The data in medical field is flowing in huge volumes. However, there are many problems related to consuming and curating data from different sources. It is difficult to find the right good quality data which can be representative of learnt patterns over future data. The current systems involves a lot of manual Intervention right from the Data Preparation stage to make use of the information analysed by the machine learning algorithms. The Domain specific Documents are read by a Subject matter expert and data is prepared manually. In this Code Pattern, we have showcased the strategy on how a reccomendation/ decision-support table can be formed by mining different types of documents like `lab reports`, `doctors transcripts`, etc. and curate it in one place which can aid the doctor in making more informed decisions about their patients.
+Let us take the example of recommendations in the healthcare domain. A doctors recommendation to treat a patient can take into consideration the below information:
+- age, weight, BP 
+- symptoms
+- any known illnesses
+- family medical history
+- current medication and more depending on the situation
+- previous treatment history
 
-In this Code pattern, We have taken Tuberculosis Data to showcase the strategy on how to build a recommendation table to aid doctors in giving their patient's a personalised consultation by weighing many factors. The features and their values are extracted from the files like `facts about Tuberculosis`, `Pulmonologist's Reports` and `Lab-reports` of the patient by analysing and integerating the facts mined from these files and are then put in the `recommendation table`. Further, this recommendation table can be used to build a model and then an interactive system on top of that model to aid Pulmonologist in taking treatment decision which we will showcase in the another pattern. This will enable Pulmonologist to give personalised care to the patient.
+A specialist deals with varied cases every single day. It is not feasible to remember the record of every patient and every case they come across on daily basis. This makes it difficult to audit a recommendation and give a personalised consultation as all the information is not available in one place. A recommendation table can assist in giving proper care to patient or to even get a second opinion as all information leading to the recommendation is available at one place.
+
+In this Code Pattern, we have showcased the strategy on how a recommendation or a decision-support table can be formed by mining different types of documents like lab reports, doctors transcripts, etc. and curate it in one place which can aid the doctor in making more informed decisions about their patients.
+
+For demonstration, we have taken tuberculosis diagnosis and built a recommendation table that can aid in giving personalised treatment to patients.
+
+The below steps are followed in the code-pattern:
+- The features and their values are extracted from a facts about Tuberculosis 
+- Extract facts from Pulmonologist's Reports 
+- Extract facts from Lab reports of the patient 
+- Build a recommendation table
 
 ![](doc/source/images/architecture.png)
 
