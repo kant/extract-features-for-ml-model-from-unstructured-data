@@ -122,9 +122,9 @@ and its `Files` tab.
 
 Get Watson NLU service credentials:
 
-* On your IBM Cloud Dashboard, click on Watson NLU service instance. On the left hand navigation bar click Service Credentials
-* If you see View Credentials under Service Credentials then click on the down arrow mark beside View Credentials. Make of note of the credentials.
-* If you do not see View Credentials, then click New Credential to create new credentials and make a note of new credentials.
+* On your IBM Cloud Dashboard, click on Watson NLU service instance. On the left hand navigation bar click `Service Credentials`
+* If you see `View Credentials` under `Service Credentials` then click on the down arrow mark beside `View Credentials`. Make of note of the credentials.
+* If you do not see `View Credentials`, then click `New Credential` to create new credentials and make a note of new credentials.
 
 Select the cell below `2.1 Add your service credentials from IBM Cloud` for the Watson services section in the notebook to update username and password for Watson NLU.
 
@@ -135,18 +135,18 @@ Select the cell below `2.1 Add your service credentials from IBM Cloud` for the 
 Select the cell below `2.2 Add your service credentials for Object Storage` section in the notebook to update the credentials for Object Store.
 
 * Delete the contents of the cell
-* Use Find and Add Data (look for the 10/01 icon) and its Files tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below 2.2 Add...
-* Under Files, click the dropdown for Insert to code for `data_doctor.zip`
+* Use Find and Add Data (look for the `10/01` icon) and its Files tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below 2.2 Add...
+* Under `Files`, click the dropdown for Insert to code for `data_doctor.zip`
 * Click Insert StreamingBody object.
-* Make sure the credentials are saved as streaming_body_1. If not edit and replace the numbers to 1. There should be four such occurrences in the cell.
+* Make sure the credentials are saved as `streaming_body_1`. If not edit and replace the numbers to 1. There should be four such occurrences in the cell.
 
 ![](doc/source/images/service_credentials_chat.png)
 
 * In the next cell, Delete the contents of the cell
-* Use Find and Add Data (look for the 10/01 icon) and its Files tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below 2.2 Add...
-* Under Files, click the dropdown for Insert to code for `config.txt`
-* Click Insert Service Credentials.
-* Make sure the credentials are saved as credentials_1. If not edit and replace the numbers to 1. There should be four such occurrences in the cell.
+* Use Find and Add Data (look for the `10/01` icon) and its Files tab. You should see the file names uploaded earlier. Make sure your active cell is the empty one below 2.2 Add...
+* Under `Files`, click the dropdown for Insert to code for `config.txt`
+* Click `Insert Service Credentials`.
+* Make sure the credentials are saved as `credentials_1`. If not edit and replace the numbers to 1. There should be four such occurrences in the cell.
 
 ![](doc/source/images/service_credentials_config.png)
 
@@ -191,7 +191,7 @@ Under the `File` menu, there are several ways to save your notebook:
 
 #### How to share your work:
 
-You can share your notebook by selecting the “Share” button located in the top
+You can share your notebook by selecting the `Share` button located in the top
 right section of your notebook panel. The end result of this action will be a URL
 link that will display a “read-only” version of your notebook. You have several
 options to specify exactly what you want shared from your notebook:
@@ -206,6 +206,7 @@ options to specify exactly what you want shared from your notebook:
 ## 3. Analyze the Results
 
 There are 3 main modules in the notebook:
+
 Module 1----Factfile: Extract all possible symptoms from the Factfile, which in turn will the used as features(column name).
 
 Module 2----Doctor Transcript: Extract the following features-
